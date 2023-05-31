@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Card</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -30,11 +31,14 @@
         <img class="main-image" src="beach-house-01.png" alt="symbol" />
       </div>
       <div class="content">
-        <img
-          class="play-button"
-          src="noun-play-5662473.png"
-          alt="play button"
-        />
+        <div id="media-control">
+          <button id="play-pause-button">
+            <img src="noun-play-5662473.png" id="play" />
+            <img src="noun-pause.png" id="pause" />
+          </button>
+        </div>
+
+        <audio id="audio" src="audio_beach_house_holiday_house.mp3"></audio>
         <h2>become</h2>
         <h1>holiday house</h1>
         <h2>Beach house</h2>
